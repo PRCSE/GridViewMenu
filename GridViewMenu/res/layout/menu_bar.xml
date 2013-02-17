@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+	
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+	    
+	    <RelativeLayout 
+	        android:id="@+id/menu_item_1"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content">
+	        
+	        <TextView
+			    android:id="@+id/search_menu_item"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Search:"
+			    android:textSize="30dp"/>
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/menu_item_2"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/menu_item_1"
+		    android:layout_marginLeft="20dp">
+	        
+	        <TextView 
+			    android:id="@+id/artist_menu_item"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Artists"
+			    android:textSize="30dp"/>
+	    </RelativeLayout>
+	    
+		<RelativeLayout 
+	        android:id="@+id/menu_item_3"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/menu_item_2"
+		    android:layout_marginLeft="20dp">
+	        
+	        <TextView 
+			    android:id="@+id/venue_menu_item"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Venue"
+			    android:textSize="30dp"/>
+	    </RelativeLayout>
+	    
+		<RelativeLayout 
+	        android:id="@+id/menu_item_4"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/menu_item_3"
+		    android:layout_marginLeft="20dp">
+	        
+	        <TextView 
+			    android:id="@+id/tour_menu_item"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Tours"
+			    android:textSize="30dp"/>
+	    </RelativeLayout>
+	
+	
+		<RelativeLayout 
+	        android:id="@+id/menu_item_5"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/menu_item_4"
+		    android:layout_marginLeft="20dp">
+	        
+	        <TextView 
+			    android:id="@+id/dates_menu_item"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Dates"
+			    android:textSize="30dp"/>
+	    </RelativeLayout>
+	    
+		<RelativeLayout 
+	        android:id="@+id/menu_item_6"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/menu_item_5"
+		    android:layout_marginTop="20dp">
+	        
+	       	<TextView 
+			    android:id="@+id/user_menu_item"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="John Smith"
+			    android:textSize="30dp"/>
+	    </RelativeLayout>
+	
+		<RelativeLayout 
+	        android:id="@+id/menu_item_7"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/menu_item_6"
+		    android:layout_marginLeft="20dp">
+	        
+	       	<TextView 
+			    android:id="@+id/profile_menu_item"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Profile"
+			    android:textSize="30dp"/>
+	    </RelativeLayout>
+	    
+		<RelativeLayout 
+	        android:id="@+id/menu_item_8"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/menu_item_7"
+		    android:layout_marginLeft="20dp">
+	        
+	       	<TextView 
+			    android:id="@+id/tickets_menu_item"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Tickets"
+			    android:textSize="30dp"/>
+	    </RelativeLayout>
+	
+		<RelativeLayout 
+	        android:id="@+id/menu_item_9"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/menu_item_8"
+		    android:layout_marginLeft="20dp">
+	        
+	       	<TextView 
+			    android:id="@+id/payment_menu_item"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Payment Details"
+			    android:textSize="30dp"/>
+	    </RelativeLayout>
+	
+			<RelativeLayout 
+	        android:id="@+id/menu_item_10"
+	        android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/menu_item_9"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginLeft="20dp">
+	        
+	       	<TextView 
+			    android:id="@+id/logout_menu_item"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Log out"
+			    android:textSize="30dp"/>
+	    </RelativeLayout>
+	
+	    
+	    
+	</RelativeLayout>
+	
