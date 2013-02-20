@@ -14,7 +14,7 @@
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:text="Search:"
-			    android:textSize="30dp"/>
+			    android:textSize="30sp"/>
 	    </RelativeLayout>
 	    
 	    <RelativeLayout 
@@ -29,7 +29,7 @@
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:text="Artists"
-			    android:textSize="30dp"/>
+			    android:textSize="30sp"/>
 	    </RelativeLayout>
 	    
 		<RelativeLayout 
@@ -44,7 +44,7 @@
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:text="Venue"
-			    android:textSize="30dp"/>
+			    android:textSize="30sp"/>
 	    </RelativeLayout>
 	    
 		<RelativeLayout 
@@ -59,7 +59,7 @@
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:text="Tours"
-			    android:textSize="30dp"/>
+			    android:textSize="30sp"/>
 	    </RelativeLayout>
 	
 	
@@ -75,7 +75,7 @@
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:text="Dates"
-			    android:textSize="30dp"/>
+			    android:textSize="30sp"/>
 	    </RelativeLayout>
 	    
 		<RelativeLayout 
@@ -90,7 +90,7 @@
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:text="John Smith"
-			    android:textSize="30dp"/>
+			    android:textSize="30sp"/>
 	    </RelativeLayout>
 	
 		<RelativeLayout 
@@ -105,7 +105,7 @@
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:text="Profile"
-			    android:textSize="30dp"/>
+			    android:textSize="30sp"/>
 	    </RelativeLayout>
 	    
 		<RelativeLayout 
@@ -120,7 +120,7 @@
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:text="Tickets"
-			    android:textSize="30dp"/>
+			    android:textSize="30sp"/>
 	    </RelativeLayout>
 	
 		<RelativeLayout 
@@ -135,7 +135,7 @@
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:text="Payment Details"
-			    android:textSize="30dp"/>
+			    android:textSize="30sp"/>
 	    </RelativeLayout>
 	
 			<RelativeLayout 
@@ -151,7 +151,7 @@
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:text="Log out"
-			    android:textSize="30dp"/>
+			    android:textSize="30sp"/>
 	    </RelativeLayout>
 	
 	    
