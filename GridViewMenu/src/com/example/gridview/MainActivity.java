@@ -21,11 +21,10 @@ public class MainActivity extends Activity {
 		SlidingMenu sMenu = new SlidingMenu(this);
 		sMenu.setMode(SlidingMenu.LEFT);
 		sMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
-		sMenu.setBehindOffset(400);
+		sMenu.setBehindOffsetRes(R.dimen.halfScreen);
 		sMenu.setFadeDegree(0.35f);
 		sMenu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
 		sMenu.setMenu(R.layout.menu_bar);
-		
 		
 		GridView gridview = (GridView) findViewById(R.id.gridview);
 	    gridview.setAdapter(new ImageAdapter(this));
