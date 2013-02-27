@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#373736"
+    android:paddingLeft="20dp" >
+    <!-- android:background="@drawable/menu_tray_texture_repeat"  -->
+    
+
+    <RelativeLayout
+        android:id="@+id/search_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/search_menu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/search_menu_image"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/action_search" />
+
+            <TextView
+                android:id="@+id/search_menu_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/search_menu_image"
+                android:text="Search"
+                android:textColor="#FFFFFF"
+                android:textSize="35dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/search_sub_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_menu_item"
+            android:layout_marginLeft="35dp" >
+
+            <RelativeLayout
+                android:id="@+id/menu_item_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/search_menu_item" >
+
+                <ImageView
+                    android:id="@+id/artist_menu_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/social_group" />
+
+                <TextView
+                    android:id="@+id/artist_menu_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/artist_menu_image"
+                    android:paddingLeft="5dp"
+                    android:text="Artists"
+                    android:textColor="#FFFFFF"
+                    android:textSize="35dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menu_item_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/menu_item_2" >
+
+                <ImageView
+                    android:id="@+id/venue_menu_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/location_place" />
+
+                <TextView
+                    android:id="@+id/venue_menu_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/venue_menu_image"
+                    android:paddingLeft="5dp"
+                    android:text="Venue"
+                    android:textColor="#FFFFFF"
+                    android:textSize="35dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menu_item_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/menu_item_3" >
+
+                <ImageView
+                    android:id="@+id/venue_menu_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/action_help" />
+
+                <TextView
+                    android:id="@+id/tour_menu_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/venue_menu_image"
+                    android:paddingLeft="5dp"
+                    android:text="Tours"
+                    android:textColor="#FFFFFF"
+                    android:textSize="35dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menu_item_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/menu_item_4" >
+
+                <ImageView
+                    android:id="@+id/date_menu_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/collections_go_to_today" />
+
+                <TextView
+                    android:id="@+id/dates_menu_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/date_menu_image"
+                    android:paddingLeft="5dp"
+                    android:text="Dates"
+                    android:textColor="#FFFFFF"
+                    android:textSize="35dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_menu" >
+
+        <RelativeLayout
+            android:id="@+id/user_menu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/menu_item_5"
+            android:layout_marginTop="20dp" >
+
+            <ImageView
+                android:id="@+id/user_menu_image"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/sample_user_icon" />
+
+            <TextView
+                android:id="@+id/user_menu_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/user_menu_image"
+                android:paddingLeft="5dp"
+                android:text="John Smith"
+                android:textColor="#FFFFFF"
+                android:textSize="35dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_sub_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_menu_item"
+            android:layout_marginLeft="35dp" >
+
+            <RelativeLayout
+                android:id="@+id/menu_item_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                
+                <ImageView
+                android:id="@+id/profile_menu_image"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/social_person" />
+
+                <TextView
+                    android:id="@+id/profile_menu_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:layout_toRightOf="@id/profile_menu_image"
+                	android:paddingLeft="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="35dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menu_item_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/menu_item_7" >
+                
+                <ImageView
+                android:id="@+id/ticket_menu_image"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/action_help" />
+
+                <TextView
+                    android:id="@+id/tickets_menu_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/ticket_menu_image"
+                	android:paddingLeft="5dp"
+                    android:text="Tickets"
+                    android:textColor="#FFFFFF"
+                    android:textSize="35dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menu_item_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/menu_item_8">
+                
+                <ImageView
+                android:id="@+id/payment_menu_image"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/action_help" />
+
+                <TextView
+                    android:id="@+id/payment_menu_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Details"
+                    android:layout_toRightOf="@id/payment_menu_image"
+                	android:paddingLeft="5dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="35dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/menu_item_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/menu_item_9"
+                android:layout_marginTop="10dp" >
+                
+                <ImageView
+                android:id="@+id/logout_menu_image"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/navigation_previous_item" />
+
+                <TextView
+                    android:id="@+id/logout_menu_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/logout_menu_image"
+                	android:paddingLeft="5dp"
+                    android:text="Log out"
+                    android:textColor="#FFFFFF"
+                    android:textSize="35dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    
+    <RelativeLayout 
+        android:id="@+id/theme_menu_item"
+       	android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+        <ImageView 
+            android:id="@+id/theme_menu_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="#ffffff"
+            android:layout_centerVertical="true"/>
+        
+        <TextView 
+            android:id="@+id/theme_menu_item"
+            android:layout_toRightOf="@id/theme_menu_image"
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Theme"
+            android:textSize="35dp"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+
+</RelativeLayout>
