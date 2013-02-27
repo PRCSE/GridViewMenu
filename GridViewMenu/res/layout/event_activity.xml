@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E4" >
+
+    <RelativeLayout
+        android:id="@+id/event_tile"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/artist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:padding="0dp"
+            android:text="A$AP ROCKY"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/presents_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/artist"
+            android:paddingTop="10dp"
+            android:text="presents"
+            android:textColor="#808080"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tour"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/presents_label"
+            android:padding="0dp"
+            android:text="Long.Live.A$AP"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/at_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tour"
+            android:paddingTop="10dp"
+            android:text="at"
+            android:textColor="#808080"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/venue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/at_label"
+            android:padding="0dp"
+            android:text="HMV, The Ritz"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/in_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/venue"
+            android:padding="0dp"
+            android:text="in"
+            android:textColor="#808080"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/in_label"
+            android:padding="0dp"
+            android:text="Manchester"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/on_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/city"
+            android:paddingTop="10dp"
+            android:text="on"
+            android:textColor="#808080"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/on_label"
+            android:padding="0dp"
+            android:text="Monday, November 15, 2013"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/purchase_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:paddingTop="35dp"
+            android:text="PURCHASE"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/number_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/purchase_label"
+            android:paddingTop="10dp"
+            android:text="number of tickets"
+            android:textColor="#808080"
+            android:textSize="22sp" />
+
+        <Spinner
+            android:id="@+id/ticket_number_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/number_label"
+            android:layout_below="@+id/number_label"
+            android:entries="@array/ticket_spinner"
+            android:textSize="22sp" />
+        
+        <TextView
+            android:id="@+id/seating_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ticket_number_spinner"
+            android:paddingTop="10dp"
+            android:text="Seating"
+            android:textColor="#808080"
+            android:textSize="22sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/seating_label"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:paddingBottom="100dp"
+             >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="standing"
+                android:textSize="22sp" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="seated"
+                android:textSize="22sp" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="premium"
+                android:textSize="22sp" />
+
+        </RadioGroup>
+        
+        <Button
+            android:id="@+id/book_button"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:text="book (£14)"
+            android:textSize="45sp"
+            android:layout_below="@id/radioGroup1"
+             />
+        
+    </RelativeLayout>
+	
+</RelativeLayout>

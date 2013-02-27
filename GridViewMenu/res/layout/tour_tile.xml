@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tour_grid"
+    android:layout_width="550dp"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:padding="0dp" >
+            
+    	<TextView
+    	    android:id="@+id/title"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center_vertical|fill_vertical|center_horizontal|fill_horizontal"
+    	    android:padding="0dp"
+    	    android:text="Long.Live.A$AP" 
+    	    android:textColor="#000000"
+    	    android:textSize="22sp"
+    	    android:textAlignment="center"/>
+    	
+    	<ImageView 
+    	    android:id="@+id/tour_image"
+    	    android:src="@drawable/longliveasap"
+    	    android:layout_height="155dp"
+    	    android:layout_width="fill_parent"
+    	    android:layout_below="@id/title"
+    	    android:scaleType="centerCrop"/>
+    	
+    	<TextView 
+    	    android:id="@+id/event_count"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:textSize="22sp"
+    	    android:textColor="#808080"
+    	    android:text="9 events"/>
+    	
+    	<TextView 
+    	    android:id="@+id/tour_date"
+    	    android:layout_alignBottom="@+id/tour_grid"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentEnd="true"
+    	    android:layout_alignParentBottom="true"
+    	    android:textSize="22sp"
+    	    android:textColor="#808080"
+    	    android:text="15/03/13 to 31/03/13"/>
+
+</RelativeLayout>

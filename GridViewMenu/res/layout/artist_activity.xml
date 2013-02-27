@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E4" >
+    
+    <RelativeLayout
+        android:id="@+id/artist_tile"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:background="#FFFFFF" >
+        
+        <ImageView 
+	        android:id="@+id/thumbnail"
+	        android:layout_alignParentStart="true"
+	        android:layout_width="150dp" 
+	        android:layout_height="fill_parent"
+	        android:src="@drawable/asap_rocky"
+	        android:scaleType="centerCrop"
+	        android:padding="0dp" />
+    	
+	    <TextView
+	        android:id="@+id/name"
+	        android:layout_toRightOf="@id/thumbnail"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="A$AP Rocky"
+	        android:textSize="45sp"
+	        android:padding="0dp" />
+	    
+	    <TextView
+	        android:id="@+id/bio"
+	        android:layout_toRightOf="@id/thumbnail"
+	        android:layout_below="@id/name"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Rakim Mayers, better known by his stage name ASAP Rocky, is an American rapper and music video director. Born and raised in the New York City neighborhood Harlem, he is a member of the hip hop collective A$AP Mob, from which he adopted his moniker."
+	        android:padding="0dp" />
+    
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/tours"
+        android:layout_below="@id/artist_tile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp">
+	    
+        <TextView 
+            android:id="@+id/tours_title"
+            android:text="tours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"/>
+        
+        <GridView
+            android:id="@+id/tour_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/tours_title"
+            android:background="#E5E5E4"
+            android:gravity="center_horizontal"
+            android:minHeight="100dp"
+            android:verticalSpacing="10dp" >
+            
+        </GridView>
+        
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/events"
+        android:layout_below="@id/tours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        >
+	    
+        <TextView 
+            android:id="@+id/events_title"
+            android:text="events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"/>
+        
+        <GridView
+            android:id="@+id/event_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:minHeight="100dp"
+            android:layout_below="@id/events_title"
+            android:background="#E5E5E4"
+            android:verticalSpacing="10dp"
+            android:numColumns="2"
+            android:gravity="center_horizontal"
+            android:horizontalSpacing="0dp" >
+            
+        </GridView>
+        
+        
+    </RelativeLayout>
+	
+    
+</RelativeLayout>
